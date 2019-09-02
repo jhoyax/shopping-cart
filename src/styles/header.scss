@@ -1,0 +1,28 @@
+header {
+	background-color: $gray-800;
+
+	.navbar-dark {
+
+		.navbar-brand {
+
+			&:hover {
+				color: $gray-300;
+			}
+
+			.icon-brand {
+				font-size: 2em;
+			}
+		}
+
+		.navbar-nav {
+
+			.nav-link {
+				color: $white;
+
+				&:hover {
+					color: $gray-300;
+				}
+			}
+		}
+	}
+}

@@ -1,15 +1,15 @@
 import React from 'react';
 import {
 	BrowserRouter as Router,
-	Route,
-	Switch,
-	Redirect
-} from "react-router-dom";
+	Switch
+} from 'react-router-dom';
 
-import Home from './components/home';
-import Shop from './components/shop';
-import PageNotFound from './components/pageNotFound';
+// Import containers
+import Home from './containers/home';
+import Shop from './containers/shop';
+import PageNotFound from './containers/pageNotFound';
 
+// Import layouts
 import FrontendLayout from './layouts/FrontendLayout';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
     	<Switch>
 	        <FrontendLayout path="/" exact component={Home} />
 	        <FrontendLayout path="/shop" component={Shop} />
-	        <Route component={PageNotFound} />
+	        <FrontendLayout component={PageNotFound} />
    		</Switch>
     </Router>
   );

@@ -1,0 +1,15 @@
+// Import Bootstrap and its default variables
+@import '~bootstrap/scss/bootstrap';
+
+// Import global style
+@import './styles/variables';
+@import './styles/base';
+@import './styles/btns';
+@import './styles/lists';
+@import './styles/section';
+@import './styles/card';
+@import './styles/input-group';
+@import './styles/header';
+@import './styles/footer';
+@import './styles/product';
+@import './styles/404';

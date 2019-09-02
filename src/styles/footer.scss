@@ -1,0 +1,42 @@
+footer {
+	background-color: $gray-800;
+	color: $white;
+	padding-top: 1em;
+
+	ul {
+
+		li {
+
+			a {
+				color: $white;
+
+				&:hover {
+					color: $gray-300;
+					text-decoration: none;
+				}
+			}
+
+			.icon-payment {
+				font-size: 2em;
+			}
+		}
+	}
+
+	.copyright {
+		background-color: $black-20;
+		margin-top: 1em;
+		padding-top: 0.5em;
+    	padding-bottom: 0.5em;
+
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media (max-width: 767.98px) {
+
+	footer {
+		text-align: center;
+	}
+}

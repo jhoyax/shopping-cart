@@ -1,0 +1,21 @@
+ul, ol  {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.list-inline {
+
+	li {
+		display: inline-block;
+		margin-top: 5px;
+		margin-right: 5px;
+	}
+}
+
+.list-links {
+
+	li {
+		margin-bottom: 0.25em;
+	}
+}
