@@ -12,6 +12,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// Import utils
+import LinkHelpers from '../../utils/LinkHelpers';
+
 function PageNotFound() {
 	return (
 		<div class="content">
@@ -19,7 +22,7 @@ function PageNotFound() {
 				<Container>
 					<FontAwesomeIcon icon={faHeartBroken} className="icon-404" />
 					<h1 className="text-dark">The page you were looking for doesn't exist</h1>
-					<a href="/" className="btn btn-secondary">
+					<a href={LinkHelpers.setAbsolutePath('/')} className="btn btn-secondary">
 						<FontAwesomeIcon icon={faLongArrowAltLeft} /> Back to Home
 					</a>
 				</Container>

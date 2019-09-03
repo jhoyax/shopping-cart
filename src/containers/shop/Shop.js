@@ -8,6 +8,9 @@ import {
 	Container
 } from 'react-bootstrap';
 
+// Import utils
+import LinkHelpers from '../../utils/LinkHelpers';
+
 function Shop() {
 	return (
 		<div className="content">
@@ -24,7 +27,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
@@ -37,7 +40,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
@@ -50,7 +53,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
@@ -63,7 +66,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
@@ -77,7 +80,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
@@ -90,7 +93,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
@@ -103,7 +106,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
@@ -116,7 +119,7 @@ function Shop() {
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href="/product" className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>

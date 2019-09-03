@@ -18,6 +18,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// Import utils
+import LinkHelpers from '../../utils/LinkHelpers';
+
 function Home() {
 	return (
 		<div className="content">
@@ -83,7 +86,7 @@ function Home() {
 								      Some quick example text to build on the card title and make up the bulk of
 								      the card's content.
 								    </Card.Text>
-								    <a href="/sports" className="btn btn-outline-dark">Read More</a>
+								    <a href={LinkHelpers.setAbsolutePath('/sports')} className="btn btn-outline-dark">Read More</a>
 								</Card.Body>
 							</Card>
 					    </Col>
@@ -96,7 +99,7 @@ function Home() {
 								      Some quick example text to build on the card title and make up the bulk of
 								      the card's content.
 								    </Card.Text>
-								    <a href="/fashion" className="btn btn-outline-dark">Read More</a>
+								    <a href={LinkHelpers.setAbsolutePath('/fashion')} className="btn btn-outline-dark">Read More</a>
 								</Card.Body>
 							</Card>
 					    </Col>
@@ -109,7 +112,7 @@ function Home() {
 								      Some quick example text to build on the card title and make up the bulk of
 								      the card's content.
 								    </Card.Text>
-								    <a href="/electronics" className="btn btn-outline-dark">Read More</a>
+								    <a href={LinkHelpers.setAbsolutePath('/electronics')} className="btn btn-outline-dark">Read More</a>
 								</Card.Body>
 							</Card>
 					    </Col>
@@ -122,7 +125,7 @@ function Home() {
 								      Some quick example text to build on the card title and make up the bulk of
 								      the card's content.
 								    </Card.Text>
-								    <a href="/health" className="btn btn-outline-dark">Read More</a>
+								    <a href={LinkHelpers.setAbsolutePath('/health')} className="btn btn-outline-dark">Read More</a>
 								</Card.Body>
 							</Card>
 					    </Col>

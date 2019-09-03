@@ -14,7 +14,7 @@ import FrontendLayout from './layouts/FrontendLayout';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.REACT_APP_BASENAME}>
     	<Switch>
 	        <FrontendLayout path="/" exact component={Home} />
 	        <FrontendLayout path="/shop" component={Shop} />

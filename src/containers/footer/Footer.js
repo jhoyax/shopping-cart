@@ -17,6 +17,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+// Import utils
+import LinkHelpers from '../../utils/LinkHelpers';
+
 function Footer() {
 	return (
 		<footer>
@@ -25,25 +28,25 @@ function Footer() {
                     <Col xs={12} sm={6} md={3}>
                         <ul className="list-links">
                             <li className="h5">Company</li>
-                            <li><a href="/about-us">About Us</a></li>
-                            <li><a href="/contact-us">Contact Us</a></li>
-                            <li><a href="/news">News</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/about-us')}>About Us</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/contact-us')}>Contact Us</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/news')}>News</a></li>
                         </ul>
                     </Col>
                     <Col xs={12} sm={6} md={3}>
                         <ul className="list-links">
                             <li className="h5">Categories</li>
-                            <li><a href="/electronics">Electronics</a></li>
-                            <li><a href="/sports">Sports</a></li>
-                            <li><a href="/fashion">Fashion</a></li>
-                            <li><a href="/fashion">Health</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/electronics')}>Electronics</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/sports')}>Sports</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/fashion')}>Fashion</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/health')}>Health</a></li>
                         </ul>
                     </Col>
                     <Col xs={12} sm={6} md={3}>
                         <ul className="list-links">
                             <li className="h5">Support</li>
-                            <li><a href="/terms">Terms &amp; Conditions</a></li>
-                            <li><a href="/privacy-policy">Privacy Policy</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/terms')}>Terms &amp; Conditions</a></li>
+                            <li><a href={LinkHelpers.setAbsolutePath('/privacy-policy')}>Privacy Policy</a></li>
                         </ul>
                     </Col>
                     <Col xs={12} sm={6} md={3}>
