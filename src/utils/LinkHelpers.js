@@ -18,8 +18,14 @@ export default class LinkHelpers {
       return url;
     }
 
-    // If the url begins with a forward slash, set the path using the api domain.
-    if (url.charAt(0) === '/') {
+    /**
+     * If the url begins with a forward slash, set the path using the api domain, and
+     * REACT_APP_PUBLIC_URL has value
+     */
+    if (
+      url.charAt(0) === '/' && 
+      process.env.REACT_APP_PUBLIC_URL
+    ) {
       url = `${process.env.REACT_APP_PUBLIC_URL}${url}`;
     }
 
