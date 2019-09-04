@@ -1,5 +1,6 @@
 header {
 	background-color: $gray-800;
+	text-transform: uppercase;
 
 	.navbar-dark {
 
@@ -23,6 +24,24 @@ header {
 					color: $gray-300;
 				}
 			}
+
+			.nav-cart {
+				position: relative;
+				margin-right: 5px;
+
+				.count {
+					position: absolute;
+					top: 3px;
+					right: -5px;
+					font-size: 10px;
+					vertical-align: middle;
+				}
+			}
+		}
+
+		.navbar-toggler {
+			color: $white;
+			border: none;
 		}
 	}
 }

@@ -2,6 +2,8 @@ footer {
 	background-color: $gray-800;
 	color: $white;
 	padding-top: 1em;
+	font-size: 15px;
+	font-weight: 100;
 
 	ul {
 
@@ -19,6 +21,10 @@ footer {
 			.icon-payment {
 				font-size: 2em;
 			}
+
+			&.h5 {
+				font-size: 1em;
+			}
 		}
 	}
 
@@ -27,6 +33,7 @@ footer {
 		margin-top: 1em;
 		padding-top: 0.5em;
     	padding-bottom: 0.5em;
+		font-size: 14px;
 
 		p {
 			margin-bottom: 0;

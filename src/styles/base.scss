@@ -9,3 +9,22 @@
   color: #fff;
   text-shadow: none;
 }
+
+body {
+	font-family: 'Barlow', sans-serif;
+	font-size: $base_px;
+  color: $dark;
+
+  	@include media-breakpoint-down(md) {
+    	font-size: 14px;
+  	}
+}
+
+a {
+  color: $dark;
+
+  &:hover {
+    color: $gray-600;
+    text-decoration: none;
+  }
+}

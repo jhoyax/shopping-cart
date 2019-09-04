@@ -28,17 +28,6 @@ function Home() {
 			  <Carousel.Item>
 			    <img
 			      className="d-block w-100"
-			      src="https://picsum.photos/id/0/800/400"
-			      alt="First slide"
-			    />
-			    <Carousel.Caption>
-			      <h3>Electronics</h3>
-			      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-			    </Carousel.Caption>
-			  </Carousel.Item>
-			  <Carousel.Item>
-			    <img
-			      className="d-block w-100"
 			      src="https://picsum.photos/id/326/800/400"
 			      alt="Third slide"
 			    />
@@ -46,6 +35,17 @@ function Home() {
 			    <Carousel.Caption>
 			      <h3>Health</h3>
 			      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			    </Carousel.Caption>
+			  </Carousel.Item>
+			  <Carousel.Item>
+			    <img
+			      className="d-block w-100"
+			      src="https://picsum.photos/id/0/800/400"
+			      alt="First slide"
+			    />
+			    <Carousel.Caption>
+			      <h3>Electronics</h3>
+			      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 			    </Carousel.Caption>
 			  </Carousel.Item>
 			  <Carousel.Item>

@@ -21,8 +21,8 @@ function PageNotFound() {
 			<div class="section section-404">
 				<Container>
 					<FontAwesomeIcon icon={faHeartBroken} className="icon-404" />
-					<h1 className="text-dark">The page you were looking for doesn't exist</h1>
-					<a href={LinkHelpers.setAbsolutePath('/')} className="btn btn-secondary">
+					<h3 className="text-secondary">The page you were looking for doesn't exist</h3>
+					<a href={LinkHelpers.setAbsolutePath('/')} className="btn btn-dark">
 						<FontAwesomeIcon icon={faLongArrowAltLeft} /> Back to Home
 					</a>
 				</Container>

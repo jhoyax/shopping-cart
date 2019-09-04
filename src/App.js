@@ -7,6 +7,7 @@ import {
 // Import containers
 import Home from './containers/home';
 import Shop from './containers/shop';
+import Login from './containers/login';
 import PageNotFound from './containers/pageNotFound';
 
 // Import layouts
@@ -18,6 +19,7 @@ function App() {
     	<Switch>
 	        <FrontendLayout path="/" exact component={Home} />
 	        <FrontendLayout path="/shop" component={Shop} />
+          <FrontendLayout path="/login" component={Login} />
 	        <FrontendLayout component={PageNotFound} />
    		</Switch>
     </Router>

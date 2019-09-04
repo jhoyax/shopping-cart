@@ -20,106 +20,106 @@ function Shop() {
 					<Row>
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
 
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>
 					    <Col md={6} lg={3} className="product">
 					    	<Card className="card-product">
-							  <Card.Img variant="top" src="https://dummyimage.com/286x180/" />
+							  <Card.Img variant="top" src="https://placekitten.com/286/180" />
 							  <Card.Body>
 							    <Card.Title>Card Title</Card.Title>
 							    <Card.Text>
 							      Some quick example text to build on the card title and make up the bulk of
 							      the card's content.
 							    </Card.Text>
-							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-secondary btn-block">Add to Cart</a>
+							    <a href={LinkHelpers.setAbsolutePath('/product')} className="btn btn-dark btn-block">Add to Cart</a>
 							  </Card.Body>
 							</Card>
 					    </Col>

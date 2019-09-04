@@ -1,4 +1,12 @@
 .btn {
 	border-radius: 0;
 	cursor: pointer;
+	text-transform: uppercase;
+	font-family: Heebo;
+}
+
+button {
+	&:focus {
+		outline: none;
+	}
 }
