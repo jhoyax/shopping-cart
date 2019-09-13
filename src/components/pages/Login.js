@@ -1,9 +1,10 @@
 import React from 'react';
 
+// Import components
+import LoginForm from '../forms/LoginForm';
+
 // Import bootstrap
 import { 
-	Form,
-	Button,
 	Container,
 	Row,
 	Col,
@@ -29,23 +30,7 @@ function Login() {
 						<Card>
 							<Card.Header><FontAwesomeIcon icon={faSignInAlt} /> Login</Card.Header>
 							<Card.Body>
-								<Form>
-								  <Form.Group controlId="formBasicEmail">
-								    <Form.Label>Email address</Form.Label>
-								    <Form.Control type="email" placeholder="Enter email" required />
-								  </Form.Group>
-
-								  <Form.Group controlId="formBasicPassword">
-								    <Form.Label>Password</Form.Label>
-								    <Form.Control type="password" placeholder="Password" required />
-								  </Form.Group>
-								  <Form.Group controlId="formBasicChecbox">
-								    <Form.Check type="checkbox" label="Remember me" />
-								  </Form.Group>
-								  <Button variant="dark" type="submit" block>
-								    Login
-								  </Button>
-								</Form>
+								<LoginForm />
 								<div>
 									<a href={LinkHelpers.setAbsolutePath('/forgot-password')} className="float-left">Forgot Password?</a>
 									<a href={LinkHelpers.setAbsolutePath('/sign-up')} className="float-right">Sign Up</a>

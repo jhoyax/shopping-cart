@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route } from "react-router-dom";
 
-// Import containers
-import Header from '../containers/header';
-import Footer from '../containers/footer';
+// Import components
+import Header from '../partials/Header';
+import Footer from '../partials/Footer';
 
 function FrontendLayout({children}) {
 	return (

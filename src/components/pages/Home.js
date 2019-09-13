@@ -1,12 +1,14 @@
 import React from 'react';
 
+// Import components
+import PostCard from '../cards/PostCard';
+
 // Import bootstrap
 import { 
 	Carousel,
 	Container,
 	Row,
-	Col,
-	Card
+	Col
 } from 'react-bootstrap';
 
 // Import fontawesome
@@ -16,7 +18,6 @@ import {
     faTshirt,
     faLaptop
 } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Import utils
 import LinkHelpers from '../../utils/LinkHelpers';
@@ -78,56 +79,36 @@ function Home() {
                 	<h2 className="text-center text-dark">Categories</h2>
 					<Row>
 					    <Col md={6} lg={3}>
-					    	<Card className="card-post">
-							  	<Card.Body>
-							  		<FontAwesomeIcon icon={faVolleyballBall} className="icon-card" />
-								    <Card.Title>Sports</Card.Title>
-								    <Card.Text>
-								      Some quick example text to build on the card title and make up the bulk of
-								      the card's content.
-								    </Card.Text>
-								    <a href={LinkHelpers.setAbsolutePath('/sports')} className="btn btn-outline-dark">Read More</a>
-								</Card.Body>
-							</Card>
+					    	<PostCard 
+					    		icon={faVolleyballBall}
+					    		title="Sports"
+					    		description="Some quick example text to build on the card title and make up the bulk of the card's content."
+					    		link={LinkHelpers.setAbsolutePath('/sports')}
+					    	/>
 					    </Col>
 					    <Col md={6} lg={3}>
-					    	<Card className="card-post">
-							  	<Card.Body>
-							  		<FontAwesomeIcon icon={faTshirt} className="icon-card" />
-								    <Card.Title>Fashion</Card.Title>
-								    <Card.Text>
-								      Some quick example text to build on the card title and make up the bulk of
-								      the card's content.
-								    </Card.Text>
-								    <a href={LinkHelpers.setAbsolutePath('/fashion')} className="btn btn-outline-dark">Read More</a>
-								</Card.Body>
-							</Card>
+					    	<PostCard 
+					    		icon={faTshirt}
+					    		title="Fashion"
+					    		description="Some quick example text to build on the card title and make up the bulk of the card's content."
+					    		link={LinkHelpers.setAbsolutePath('/fashion')}
+					    	/>
 					    </Col>
 					    <Col md={6} lg={3}>
-					    	<Card className="card-post">
-							  	<Card.Body>
-							  		<FontAwesomeIcon icon={faLaptop} className="icon-card" />
-								    <Card.Title>Electronics</Card.Title>
-								    <Card.Text>
-								      Some quick example text to build on the card title and make up the bulk of
-								      the card's content.
-								    </Card.Text>
-								    <a href={LinkHelpers.setAbsolutePath('/electronics')} className="btn btn-outline-dark">Read More</a>
-								</Card.Body>
-							</Card>
+					    	<PostCard 
+					    		icon={faLaptop}
+					    		title="Electronics"
+					    		description="Some quick example text to build on the card title and make up the bulk of the card's content."
+					    		link={LinkHelpers.setAbsolutePath('/electronics')}
+					    	/>
 					    </Col>
 					    <Col md={6} lg={3}>
-					    	<Card className="card-post">
-							  	<Card.Body>
-							  		<FontAwesomeIcon icon={faHeartbeat} className="icon-card" />
-								    <Card.Title>Health</Card.Title>
-								    <Card.Text>
-								      Some quick example text to build on the card title and make up the bulk of
-								      the card's content.
-								    </Card.Text>
-								    <a href={LinkHelpers.setAbsolutePath('/health')} className="btn btn-outline-dark">Read More</a>
-								</Card.Body>
-							</Card>
+					    	<PostCard 
+					    		icon={faHeartbeat}
+					    		title="Health"
+					    		description="Some quick example text to build on the card title and make up the bulk of the card's content."
+					    		link={LinkHelpers.setAbsolutePath('/health')}
+					    	/>
 					    </Col>
 					</Row>
 				</Container>

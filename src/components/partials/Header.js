@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Import redux
+import { connect } from 'react-redux'
+
 // Import bootstrap
 import { 
 	Navbar, 
@@ -20,7 +23,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Import utis
 import LinkHelpers from '../../utils/LinkHelpers';
 
-function Header() {
+function Header({ cartTotal }) {
 	return (
 		<header>
             <Container>
@@ -38,7 +41,7 @@ function Header() {
 				      <Nav.Link href={LinkHelpers.setAbsolutePath('/cart')} className="nav-cart">
 				      	<FontAwesomeIcon icon={faShoppingBag} />
 				      	&nbsp;Cart
-				      	<Badge variant="light" className="count">0</Badge>
+				      	<Badge variant="light" className="count">{cartTotal}</Badge>
 				      </Nav.Link>
 				      <Nav.Link href={LinkHelpers.setAbsolutePath('/login')}><FontAwesomeIcon icon={faSignInAlt} /> Login</Nav.Link>
 				    </Nav>
@@ -49,4 +52,9 @@ function Header() {
 	);
 }
 
-export default Header;
+const mapStateToProps = state => {
+	const cartTotal = state.cart.total;
+	return { cartTotal };
+};
+
+export default connect(mapStateToProps)(Header);
