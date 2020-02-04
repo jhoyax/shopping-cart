@@ -35,4 +35,26 @@
 
 .card-title {
 	margin-top: 0.75rem;
+	height: 1.25em;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.card-text {
+	height: 4.5em;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin-bottom: 0.5rem;
+}
+
+.card-price {
+	font-family: Raleway;
 }
