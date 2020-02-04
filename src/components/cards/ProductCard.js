@@ -31,11 +31,13 @@ class ProductCard extends React.Component {
 				    <Card.Text>
 				      {this.props.description}
 				    </Card.Text>
-					<label className="card-price">${this.props.price.toFixed(2)}</label>
-				  	<Button variant="dark" block onClick={this.handleAddToCart}>
-				    	Add to Cart
-				  	</Button>
 			  	</Card.Body>
+				<Card.Footer>
+					<label className="card-price">${this.props.price.toFixed(2)}</label>
+					<Button variant="dark" block onClick={this.handleAddToCart} disabled={this.props.isLoading}>
+						Add to Cart
+					</Button>
+				</Card.Footer>
 			</Card>
 		);
 	}

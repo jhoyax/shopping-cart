@@ -48,6 +48,7 @@ class Shop extends React.Component {
 						title={product.title}
 						description={product.description}
 						price={product.price}
+						isLoading={this.state.isLoading}
 					/>
 				</Col>
 			);
