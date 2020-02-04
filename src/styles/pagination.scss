@@ -1,0 +1,23 @@
+.pagination {
+    align-items: center;
+    justify-content: center;
+}
+
+.page-item.active {
+    .page-link {
+        background-color: $dark;
+        border-color: $dark;
+    }
+}
+
+.page-link {
+    color: $dark;
+
+    &:focus {
+        box-shadow:  0 0 0.2rem rgba($dark, 0.25)
+    }
+
+    &:hover {
+        color: $dark;
+    }
+}

@@ -6,13 +6,13 @@ import { fetchProducts } from '../../redux/modules/products/Actions';
 
 // Import components
 import ProductCard from '../cards/ProductCard';
+import Pagination from "react-js-pagination";
 
 // Import bootstrap
 import { 
 	Row,
 	Col,
 	Container,
-	Pagination,
 	Spinner
 } from 'react-bootstrap';
 
@@ -25,14 +25,18 @@ class Shop extends React.Component {
 		this.handleFetchProducts();
 	}
 
-	handleFetchProducts = () => {
+	handleFetchProducts = (currentPage = 1) => {
 		this.setState({ isLoading: true });
 
-		this.props.fetchProducts(this.props.perPage, this.props.currentPage, () => {
+		this.props.fetchProducts(this.props.perPage, currentPage, () => {
 			this.setState({ isLoading: false });
 		});
 		
-	};
+	}
+
+	handlePageChange = (currentPage) => {
+		this.handleFetchProducts(currentPage);
+	}
 
 	productList = () => {
 	  	return this.props.products.data.map(product => {
@@ -68,23 +72,17 @@ class Shop extends React.Component {
 								<Row>
 									{this.productList()}
 								</Row>
-								<Pagination>
-									<Pagination.First />
-									<Pagination.Prev />
-									<Pagination.Item>{1}</Pagination.Item>
-									<Pagination.Ellipsis />
-
-									<Pagination.Item>{10}</Pagination.Item>
-									<Pagination.Item>{11}</Pagination.Item>
-									<Pagination.Item active>{12}</Pagination.Item>
-									<Pagination.Item>{13}</Pagination.Item>
-									<Pagination.Item disabled>{14}</Pagination.Item>
-
-									<Pagination.Ellipsis />
-									<Pagination.Item>{20}</Pagination.Item>
-									<Pagination.Next />
-									<Pagination.Last />
-								</Pagination>
+								<div className="text-center">
+									<Pagination
+										activePage={this.props.products.meta.current_page}
+										itemsCountPerPage={this.props.perPage}
+										totalItemsCount={this.props.products.meta.total}
+										pageRangeDisplayed={10}
+										onChange={this.handlePageChange}
+										itemClass="page-item"
+										linkClass="page-link"
+										/>
+								</div>
 							</React.Fragment>
 						}
 					</Container>

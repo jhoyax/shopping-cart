@@ -3,7 +3,6 @@ import { FETCH_PRODUCTS } from './ActionTypes';
 const initialState = {
 	lists: [],
 	perPage: 12,
-	currentPage: 1,
 };
 
 export default function(state = initialState, action) {
