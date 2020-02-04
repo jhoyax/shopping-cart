@@ -43,7 +43,7 @@ class Shop extends React.Component {
 			return (
 				<Col md={6} lg={3} className="mb-4" key={'col-' + product.id}>
 					<ProductCard 
-						imageUrl="https://placekitten.com/286/180"
+						imageUrl={product.image.url}
 						id={product.id}
 						title={product.title}
 						description={product.description}
