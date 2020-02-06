@@ -1,28 +1,27 @@
 import axios from 'axios';
 
-import {
-    FETCH_PRODUCTS,
-    PRODUCTS_API
+import {FETCH_PRODUCT_CATEGORIES,
+    PRODUCT_CATEGORIES_API
 } from './ActionTypes';
 
-const fetchProducts = (category, sort, perPage, currentPage, callback) => dispatch => {
+const fetchProductCategories = (callback) => dispatch => {
     return axios
-        .get(PRODUCTS_API + '?category=' + category + '&sort=' + sort + '&per_page=' + perPage + '&page=' + currentPage)
+        .get(PRODUCT_CATEGORIES_API + '?with=childrenProductCategories')
         .then(response => {
             if (!!callback) {
                 callback();
             }
 
             return dispatch({
-                type: FETCH_PRODUCTS,
+                type: FETCH_PRODUCT_CATEGORIES,
                 payload: response
             });
         })
         .catch(error => {
             throw(error);
         });
-};
+}
 
 export {
-    fetchProducts
+    fetchProductCategories
 }

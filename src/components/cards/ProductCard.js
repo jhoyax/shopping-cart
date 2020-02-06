@@ -10,6 +10,9 @@ import {
 	Button
 } from 'react-bootstrap';
 
+// Import utils
+import LinkHelpers from '../../utils/LinkHelpers';
+
 class ProductCard extends React.Component {
 
 	handleAddToCart = () => {
@@ -27,7 +30,10 @@ class ProductCard extends React.Component {
 	    	<Card className="card-product">
 			  	<Card.Img variant="top" src={this.props.imageUrl} />
 			  	<Card.Body>
-				    <Card.Title title={this.props.title}>{this.props.title}</Card.Title>
+				    <Card.Title>
+						<a href={LinkHelpers.setAbsolutePath('/products/' + this.props.slug)}>{this.props.title}</a>
+					</Card.Title>
+					<small className="card-date">{this.props.dateCreated}</small>
 				    <Card.Text>
 				      {this.props.description}
 				    </Card.Text>

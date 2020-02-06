@@ -1,0 +1,66 @@
+.sidebar {
+    padding: 1rem;
+    border: 1px solid $dark;
+    margin-bottom: 1rem;
+
+    ul {
+        margin-left: 1rem;
+
+        li {
+            position: relative;
+        }
+    }
+
+    .active {
+        font-family: Raleway;
+    }
+}
+
+.top-category {
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+
+.sub-category {
+    position: relative;
+
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        border-left: 1px solid;
+    }
+
+    li {
+        padding-left: 0.75rem;
+
+        &:last-child {
+            &:before {
+                background: #fff;
+                height: auto;
+                top: 1em;
+                bottom: 0;
+            }
+        }
+
+        &:before {
+            content: "";
+            display: block;
+            width: 0.65rem;
+            height: 0;
+            border-top: 1px solid;
+            margin-top: -1px;
+            position: absolute;
+            top: 1rem;
+            left: 0;
+        }
+    }
+}
+
+.product-total {
+    font-family: Raleway;
+}

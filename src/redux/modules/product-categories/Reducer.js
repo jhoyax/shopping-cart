@@ -1,13 +1,13 @@
-import { FETCH_PRODUCTS } from './ActionTypes';
+import { FETCH_PRODUCT_CATEGORIES } from './ActionTypes';
 
 const initialState = {
 	lists: [],
-	perPage: 12
+	perPage: 15,
 };
 
 export default function(state = initialState, action) {
 	switch (action.type) {
-		case FETCH_PRODUCTS: {
+		case FETCH_PRODUCT_CATEGORIES: {
 			return {
 				...state,
 				lists: action.payload

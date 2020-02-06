@@ -18,7 +18,7 @@
 
 .card-product {
 	text-align: center;
-	border: none;
+	border: 1px solid $dark;
 
 	.card-img-top {
 		border-radius: 0px;
@@ -27,7 +27,6 @@
 	}
 
 	.card-body {
-		padding: 0px;
 
 		.icon-card {
 			font-size: 3em;
@@ -38,10 +37,17 @@
 
 .card-title {
 	margin-top: 0.75rem;
+	margin-bottom: 0.25rem;
 }
 
 .card-text {
 	margin-bottom: 0.5rem;
+	text-align: justify;
+}
+
+.card-date {
+	margin-bottom: 0.5rem;
+	display: block;
 }
 
 .card-price {
