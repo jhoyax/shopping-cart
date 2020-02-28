@@ -2,6 +2,7 @@ import axios from 'axios';
 
 import {
     FETCH_PRODUCTS,
+    FETCH_PRODUCT_DETAILS,
     PRODUCTS_API
 } from './ActionTypes';
 
@@ -23,6 +24,25 @@ const fetchProducts = (category, sort, perPage, currentPage, callback) => dispat
         });
 };
 
+const fetchProductDetails = (slug, callback) => dispatch => {
+    return axios
+        .get(PRODUCTS_API + '/' + slug)
+        .then(response => {
+            if(!!callback) {
+                callback();
+            }
+
+            return dispatch({
+                type: FETCH_PRODUCT_DETAILS,
+                payload: response
+            });
+        })
+        .catch(error => {
+            throw(error);
+        });
+};
+
 export {
-    fetchProducts
+    fetchProducts,
+    fetchProductDetails
 }

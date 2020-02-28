@@ -11,6 +11,7 @@ import store from "./redux/Store";
 // Import components
 import Home from './components/pages/Home';
 import Shop from './components/pages/Shop';
+import ProductDetails from './components/pages/ProductDetails';
 import Login from './components/pages/Login';
 import PageNotFound from './components/pages/PageNotFound';
 
@@ -24,6 +25,7 @@ function App() {
       	<Switch>
   	        <FrontendLayout path="/" exact component={Home} />
   	        <FrontendLayout path="/shop" component={Shop} />
+  	        <FrontendLayout path="/products/:slug" component={ProductDetails} />
             <FrontendLayout path="/login" component={Login} />
   	        <FrontendLayout component={PageNotFound} />
      		</Switch>
